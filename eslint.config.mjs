@@ -21,6 +21,9 @@ const eslintConfig = [
         "error",
         "ForStatement", // Proíbe o uso de loops 'for'
       ],
+      "no-console": [
+          "error"
+        ],
     },
   },
 ];
