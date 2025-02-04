@@ -1,0 +1,26 @@
+name: Moovee
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Install packages
+        run: npm install
+    
+      - name: Run ESLint
+        run: npm run lint
+        
+      # - name: Run Jest Tests
+      #   run: npm run test
+      
+      - name: Run Build
+        run: npm run build

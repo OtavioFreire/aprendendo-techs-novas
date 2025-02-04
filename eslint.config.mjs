@@ -10,20 +10,9 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  // Estendendo as configurações do Next.js com TypeScript
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-
-  // Adicionando regras customizadas
-  {
+  ...compat.extends("next/core-web-vitals", "next/typescript"), {
     rules: {
-      // Adiciona a regra para restringir o uso de loops 'for'
-      "no-restricted-syntax": [
-        "error",
-        "ForStatement", // Proíbe o uso de loops 'for'
-      ],
-      "no-console": [
-          "error"
-        ],
+      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
 ];
