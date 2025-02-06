@@ -2,7 +2,7 @@ name: Moovee
 
 on:
   push:
-    branches: ['main']
+    branches: ['master']
 
 jobs:
   ci:
