@@ -36,7 +36,7 @@ export default function Home() {
             );
           }}
         >
-          Throw error!
+          Throw error!!
         </button>
       </body>
     </html>
